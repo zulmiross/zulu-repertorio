@@ -1,25 +1,66 @@
-.toolbar{
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #d8d8d8;
+}
+
+.toolbar {
     height: 80px;
 }
 
-.tab-link{
+.tab-link {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
 }
 
-.toolbar-inner .link{    
-    flex:1;
-    height: 80px;  
-    line-height: 25px; 
-	font-weight:bold;    
+.toolbar-inner {
+    overflow: visible !important;
+    width: 100%;
 }
 
-.toolbar-inner .link:not(.active){
-    color:gray;
-	font-weight:normal;
+.toolbar-inner::before {
+    content: "";
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
-.toolbar-inner > .link i{
+.toolbar-inner .link {
+    display: flex;
+    flex: .2;
+    height: 80px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.toolbar-inner .link:not(.active) {
+    color: gray;
+    font-weight: normal;
+}
+
+.toolbar-inner>.link i {
     font-size: 28px;
+}
+
+.navbar-inner .title {
+    margin: 0 !important;
+}
+
+#menu {
+    color: white;
+    background: blue;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 40px;
 }

@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/menu.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!--Ícones Remix Icons-->
@@ -26,19 +25,19 @@
 
 <body>
     <!-- App root element -->
-    <div id="app">
+    <div class="manu-body" id="app">
 
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
 
             <!-- TAB BAR-->
             <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner">
+                <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-line"></i>
                         <span>HOME</span>
                     </a>
-                    <a id="menu" href="/menu/" class="tab-link link">
+                    <a href="/menu/" class="tab-link link">
                         <i class="ri-menu-line"></i>
                         <span>MENU</span>
                     </a>
@@ -51,20 +50,21 @@
             </div>
 
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="index" class="page color-theme-blue">
+            <div data-name="menu" class="page color-theme-blue">
 
                 <!-- Top Navbar -->
-                <!-- <div class="navbar">
+                <div class="navbar menu">
                     <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">HOME</div>
+                    <div class="navbar-inner display-flex justify-content-center">
+                        <div class="title ">Menu</div>
+                        <a href="/index/" data-transition="f7-push" class="close "><i class="ri-close-line"></i></a>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- Scrollable page content -->
                 <!-- <div class="page-content">
                     <div class="block">
-                        Conteúdo do HOME
+                        Conteúdo do MENU
                     </div>
                 </div> -->
             </div>

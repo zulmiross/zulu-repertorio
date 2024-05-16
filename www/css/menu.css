@@ -1,0 +1,39 @@
+/* .framework7-root {
+    background: var(--color-black);
+} */
+
+#app .menu-app {
+    background: var(--color-black);
+}
+
+.view-main {
+    border-radius: 40px 40px 0 0 !important;
+}
+
+.menu .navbar-bg {
+    background: var(--color-white) !important;
+    border-radius: 40px 40px 0 0;
+}
+
+.menu .title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.close {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--color-gray);
+}
+
+.close i {
+    color: var(--color-black);
+    font-size: 1.3rem;
+}

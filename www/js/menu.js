@@ -1,0 +1,1 @@
+$(".framework7-root").css('background', 'black');
