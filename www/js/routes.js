@@ -34,8 +34,8 @@ var app = new Framework7({
                 },
                 pageInit: function(event, page) {
                     // fazer algo quando a página for inicializada
-                    // $.getScript('js/index.js')
-                    // app.views.main.router.navigate("/menu/");
+                    $.getScript('js/index.js')
+                        // app.views.main.router.navigate("/menu/");
 
                 },
                 pageBeforeRemove: function(event, page) {
